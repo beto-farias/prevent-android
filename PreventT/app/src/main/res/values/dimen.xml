@@ -1,0 +1,35 @@
+
+    <resources>
+        <dimen name="dp_2">2dp</dimen>
+        <dimen name="dp_5">5dp</dimen>
+        <dimen name="dp_10">10dp</dimen>
+        <dimen name="dp_20">20dp</dimen>
+        <dimen name="dp_25">25dp</dimen>
+        <dimen name="dp_30">30dp</dimen>
+        <dimen name="dp_40">40dp</dimen>
+        <dimen name="dp_55">55dp</dimen>
+        <dimen name="dp_60">60dp</dimen>
+        <dimen name="dp_80">80dp</dimen>
+        <dimen name="dp_100">100dp</dimen>
+        <dimen name="dp_140">140dp</dimen>
+        <dimen name="dp_160">160dp</dimen>
+        <dimen name="dp_200">200dp</dimen>
+        <dimen name="dp_300">300dp</dimen>
+        <dimen name="dp_400">400dp</dimen>
+        
+        <dimen name="ps_10">10sp</dimen>
+        <dimen name="ps_12">12sp</dimen>
+        <dimen name="ps_14">14sp</dimen>
+        <dimen name="ps_16">16sp</dimen>
+        <dimen name="ps_18">18sp</dimen>
+        <dimen name="ps_20">20sp</dimen>
+        <dimen name="ps_22">22sp</dimen>
+        <dimen name="ps_24">24sp</dimen>
+        <dimen name="ps_26">26sp</dimen>
+        <dimen name="ps_32">32sp</dimen>
+        <dimen name="ps_48">48sp</dimen>
+
+        <dimen name="ele_1">1dp</dimen>
+        <dimen name="ele_3">3dp</dimen>
+        <dimen name="ele_5">5dp</dimen>
+    </resources>

@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:1.5.0-beta2'
+    }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "mx.com.dgom.sercco.android.prevent.act"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 3
+        versionName "3.0.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+dependencies {
+
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    //compile 'com.google.android.gms:play-services-maps:8.3.0'
+    //compile 'com.google.android.gsm:play-services-'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.android.support:recyclerview-v7'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/httpclient-4.5.1.jar')
+    compile files('libs/httpcore-4.4.3.jar')
+}

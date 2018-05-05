@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:elevation="@dimen/dp_5">
+
+
+        <ImageView
+            android:id="@+id/img_logo_delito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dp_10"
+            android:src="@drawable/p_icon_enfrentamientos_badge_med"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/txt_detalle_delito"
+            android:paddingTop="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/txt_nombre_delito"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_logo_delito"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="Secuestro"
+            android:textSize="@dimen/ps_18"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/txt_detalle_delito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_logo_delito"
+            android:layout_toStartOf="@+id/linearLayout"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:text="Texto correspondiente al delito que sucedio en el tiempo x y un poco más de texto"
+            android:textSize="@dimen/ps_16"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_logo_delito"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/img_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="@dimen/dp_10"
+                android:src="@drawable/p_icon_like_hand_large" />
+
+            <TextView
+                android:id="@+id/txt_likes_delito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="25"
+                android:textSize="@dimen/ps_22"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_fecha_delito"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_nombre_delito"
+            android:layout_toEndOf="@+id/img_logo_delito"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="Hace 1 día" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txt_direccion"
+            android:layout_below="@+id/txt_fecha_delito"
+            android:layout_alignStart="@+id/txt_fecha_delito"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="@dimen/dp_20" />
+
+    </RelativeLayout>
+
+</LinearLayout>

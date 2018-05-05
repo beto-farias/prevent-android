@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:background="@color/black_overlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_logo_delito"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_crimen_homicidio"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secuestro"
+        android:id="@+id/txt_nombre_delito"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/dp_10"
+        android:textSize="@dimen/ps_20"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/img_logo_delito"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/img_logo_delito" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-May-2015"
+        android:id="@+id/txt_fecha_delito"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto correspondiente al delito que sucedio en el tiempo x y un poco más de texto"
+        android:id="@+id/txt_detalle_delito"
+        android:layout_below="@+id/img_logo_delito"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:textSize="@dimen/ps_16"
+        android:layout_toStartOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_fecha_delito"
+            android:layout_alignParentRight="true"
+            android:id="@+id/linearLayout"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/dp_10">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView9"
+                        android:src="@drawable/icon_victim"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:id="@+id/txt_victimas_delito"
+                    android:textSize="@dimen/ps_16"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/icon_criminal"
+                    android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="4"
+                    android:id="@+id/txt_delincuentes_delito"
+                    android:textSize="@dimen/ps_16"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/abc_btn_radio_to_on_mtrl_000"
+                    android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="25"
+                    android:id="@+id/txt_likes_delito"
+                    android:textSize="@dimen/ps_16"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                        android:padding="@dimen/dp_5" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

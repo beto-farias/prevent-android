@@ -1,0 +1,122 @@
+<resources>
+    <string name="facebook_app_id">1660854654196386</string>
+
+    <string name="app_name">PrevenT</string>
+
+    <string name="error_no_internet">No hay acceso a internet</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="config">Configuración</string>
+    <string name="actualizacion">Hay una actualización disponible V(%1s), ¿Desea instalar está versión?</string>
+    <string name="title_activity_home">PrevenT</string>
+    <string name="error_when_retrieving_data">Error al recibir los datos</string>
+    <string name="prevenT">PrevenT</string>
+    <string name="espere_cargando_delitos">Espere estamos cargando los delitos ...</string>
+    <string name="localizando_usuario">Localizando usuario</string>
+    <string name="espere">Espere por favor ...</string>
+    <string name="time_line">Linea de tiempo</string>
+    <string name="title_activity_time_line">Línea de tiempo</string>
+    <string name="menu_time_line">TimeLine</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_agregar_foto">Agregar fotografias al evento</string>
+
+    <string name="login_window">Entrada de usuarios</string>
+    <string name="user_name">Correo electrónico</string>
+    <string name="user_name_hint">nombre@correo.com</string>
+    <string name="password">Contraseña</string>
+    <string name="repeate_password">Repetir contraseña</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="please_wait">Espere por favor ...</string>
+    <string name="autenticating_user">Autentificando usuario</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+
+    <string name="create_new_account">No tengo cuenta</string>
+    <string name="create_account">Registro de usuarios</string>
+    <string name="person_name">Nombre</string>
+    <string name="person_name_hint">Carlos Vargas Sanchez</string>
+    <string name="register_account">Registrar usuario</string>
+    <string name="do_create_account">Crear cuenta</string>
+    <string name="error_nombre_persona_vacio">El nombre  no puede estar vacio</string>
+    <string name="error_correo_persona_vacio">El correo no puede estar vacio</string>
+    <string name="error_password_persona_vacio">La contraseña no puede estar vacio</string>
+    <string name="error_password_persona_2_vacio">La validación de la contraseña no puede estar vacio</string>
+    <string name="error_password_persona_no_coincide">Las contraseñas no coinciden</string>
+    <string name="registrando_usuario">Registrando usuario</string>
+    <string name="error_usuario_existente">El usuario ya existe!</string>
+
+    <string name="open_left_drawer">PrevenT</string>
+    <string name="close_left_drawer">Configuración</string>
+    <string name="title_activity_reportar_delito">Reportar Delito</string>
+    <string name="reportar_delito">Reportar Delito</string>
+
+    <string name="reporta_wizard_seleccione_fecha">Fecha del delito</string>
+    <string name="reporta_wizard_seleccione_punto">Seleccione el punto del delito en el mapa</string>
+    <string name="reporta_wizard_seleccione_tipo_delito">Seleccione el tipo de delito</string>
+    <string name="reporta_wizard_seleccione_tipo_sub_delito">Seleccione el tipo de sub delito</string>
+    <string name="reporta_wizard_indique_detalles">Indique los detalles de lo sucedido</string>
+    <string name="reporta_wizard_ok">Su reporte ha sido almacenado correctamente</string>
+    <string name="reporta_wizard_fail">Su reporte no ha sido almacenado, intente de nuevo</string>
+    <string name="reporta_reportando_espere">Reportando delito ... </string>
+    <string name="error_publicar_falta_texto">Debe indicar el relato del delito</string>
+
+
+    <string name="login">Iniciar Sesión</string>
+    <string name="login_out">Cerrar Sesión</string>
+    <string name="logout_correcto">Sesión cerrada</string>
+
+    <string name="delito_secuestro">Secuestro</string>
+    <string name="delito_homicidio">Homicidio</string>
+    <string name="delito_desapariciones">Desapariciones</string>
+    <string name="delito_robo">Robo</string>
+    <string name="delito_sexual">Sexual</string>
+    <string name="delito_extorcion">Extorción</string>
+    <string name="delito_mercado_negro">Mercado ilegal</string>
+    <string name="delito_enfrentamientos">Enfrentamientos</string>
+    <string name="delito_cibernetico">Cibernetico</string>
+    <string name="delito_movimientos_sociales">Movimientos Sociales</string>
+    <string name="delito_social">Sociales</string>
+    <string name="delito_prevencion">Prevención</string>
+    <string name="delito_violencia">Violencia</string>
+
+    <string name="no_user">PrevenT</string>
+
+    <string name="error_like_mio">No puede dar like al a sus reportes</string>
+    <string name="error_like_generico">Ha ocurrido un error al dar like, intente más tarde</string>
+    <string name="error_like_ya_like">Ya ha dado like a este reporte</string>
+    <string name="like_ok">Se ha registrado su like correctamente</string>
+
+    <string name="error_usuario_no_logeado">Debe estar registrado para poder dar like</string>
+    <string name="error_usuario_no_logeado_reportar">Debe estar registrado para poder reportar delitos</string>
+
+    <string name="listo">Listo</string>
+    <string name="detallar_delito">Detallar delito</string>
+
+    <string name="opcion_1_dia">1 día</string>
+    <string name="opcion_2_dia">2 días</string>
+    <string name="opcion_1_semana">1 semana</string>
+    <string name="opcion_1_mes">1 mes</string>
+    <string name="opcion_3_mes">3 meses</string>
+
+    <string name="error_cantidad_delitos_seleccionados">Sólo puedes seleccionar (%1s) eventos al mismo tiempo, ingresa o crea una cuenta pro para ampliar el número de eventos a desplegar</string>
+
+    <string name="no_photos_selected">No ha seleccionado ninguna imágen, presione + para agregar</string>
+    <string name="agregar_foto_a_delito">Agregar fotografias al evento</string>
+
+    <string name="archivo_guardado">Archivo almacenado con éxito</string>
+    <string name="guardando_archivo">Guardando archivo espere</string>
+    <string name="title_activity_intro">IntroActivity</string>
+
+
+    <string name="entiendo">Entiendo</string>
+
+    <string name="no_ha_seleccionado_delitos">No ha seleccionado ningun delito, de clic en el menú para seleccionar</string>
+    <string name="arrastra_mapa">Arrastra el mapa al lugar del evento y presiona siguiente.</string>
+</resources>
+
+

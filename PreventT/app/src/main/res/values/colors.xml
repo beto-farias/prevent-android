@@ -1,0 +1,20 @@
+<resources>
+
+    <color name="ColorPrimary">#4287BB</color>
+    <color name="ColorPrimaryDark">#000</color>
+    <color name="ColorPrimaryComplementary">#E2652A</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white_overlay">#66ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#cccccc</color>
+    <color name="gray_a">#40cccccc</color>
+	<color name="orange">#ff6600</color>
+	<color name="purple">#996699</color>
+	<color name="blue">#4287BB</color>
+	<color name="white">#ffffff</color>
+    <color name="gray_bg">#263238</color>
+
+    <color name="verde">#08c738</color>
+
+    <color name="gris_bg">#ddd</color>
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    android:visibility="visible">
+
+    <!--
+    android:layout_height="@dimen/dp_400"
+    -->
+
+    <TableLayout
+        android:id="@+id/layout_delitos_lista"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400"
+        android:background="@drawable/time_line_bg"
+        android:gravity="center_horizontal"
+        android:stretchColumns="*">
+
+
+        <TableRow
+            android:id="@+id/fila_1_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_robo_badge_large"
+                android:tag="robo" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_homicidio_badge_large"
+                android:tag="homicidio" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_robo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/delito_homicidio"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila_2_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_sexual_badge_large"
+                android:tag="sexual" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_enfrentamientos_badge_large"
+                android:tag="enfrentamientos" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_sexual"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_enfrentamientos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila_3_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_extorcion_badge_large"
+                android:tag="extorcion" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_prevencion_badge_large"
+                android:tag="prevencion" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_extorcion"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_prevencion"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila_4_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_secuestro_badge_large"
+                android:tag="secuestro" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_violencia_badge_large"
+                android:tag="violencia" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_secuestro"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_violencia"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_5_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delitoSeleccionadoAction"
+                android:src="@drawable/p_icon_mercado_negro_badge_large"
+                android:tag="mercado_negro" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/delito_mercado_negro"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_16" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

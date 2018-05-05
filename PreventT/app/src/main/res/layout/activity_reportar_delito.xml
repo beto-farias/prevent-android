@@ -1,0 +1,500 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.com.dgom.sercco.android.prevent.act.ReportarDelitoActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/mapa"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/img_ico_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="@dimen/ele_5"
+            android:src="@drawable/ico_target"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_button_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginRight="44dp"
+            android:clickable="true"
+            android:onClick="nextAction"
+            android:src="@drawable/ico_arrow_right"
+            android:visibility="gone"
+            app:layout_anchorGravity="bottom|right|end" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_help_camara_arrastra_mapa">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_80"
+                android:id="@+id/imageView17"
+                android:src="@drawable/ico_camara_happy_left"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/arrastra_mapa"
+                android:id="@+id/textView5"
+                android:background="@drawable/message_rounded_corner"
+                android:padding="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txt_title_wizard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorPrimary"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_20"
+                android:text="@string/reporta_wizard_seleccione_punto"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ps_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_seleccion_delito"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ColorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="prevAction"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <TextView
+                    android:id="@+id/txt_title_wizard_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/reporta_wizard_seleccione_tipo_delito"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ps_18" />
+            </LinearLayout>
+
+
+            <!-- view de seleccionar delito -->
+            <include layout="@layout/agregar_delito_step_2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_envia_delito_incompleto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="prevAction"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorPrimary"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/reportar_delito"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ps_18" />
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_400"
+                    android:background="@drawable/time_line_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="publicarDelitoIncompleto"
+                        android:paddingTop="@dimen/dp_40"
+                        android:src="@drawable/icon_aceptar" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_10"
+                        android:text="@string/listo"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ps_26" />
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="nextAction"
+                        android:src="@drawable/icon_mas_detalle_delito" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="@dimen/dp_10"
+                        android:text="@string/detallar_delito"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ps_26" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_seleccion_sub_delito"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_400"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/time_line_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="prevAction"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorPrimary"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/reporta_wizard_seleccione_tipo_sub_delito"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ps_18" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TableLayout
+                    android:id="@+id/tbl_sub_delitos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:stretchColumns="1"
+                    android:gravity="center_horizontal"/>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_detalle_delito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_40"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ColorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="prevAction"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/ele_3"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/reporta_wizard_indique_detalles"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ps_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="showDatePickerAction"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:src="@drawable/p_icon_calendar128"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/txt_fecha_delito"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="dd/mm/YYYY"
+                    android:textSize="@dimen/ps_20"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="addPictureAction"
+                    android:src="@drawable/p_ico_camara_med_plus"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5">
+
+                <EditText
+                    android:id="@+id/txt_resume_delito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_a"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Relato ..."
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:padding="@dimen/dp_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_80">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_add_vicimas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/ps_32"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="minVictimaAction"
+                            android:paddingRight="@dimen/dp_10"
+                            android:src="@drawable/ic_minus_circle_outline_black_36dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_5"
+                            android:src="@drawable/p_icon_victima_sm" />
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="addVictimaAction"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:src="@drawable/ic_plus_circle_outline_black_36dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_add_delincuentes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/ps_32"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="minDelincuenteAction"
+                            android:paddingRight="@dimen/dp_10"
+                            android:src="@drawable/ic_minus_circle_outline_black_36dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_5"
+                            android:src="@drawable/p_icon_criminal_sm" />
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="addDelincuenteAction"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:src="@drawable/ic_plus_circle_outline_black_36dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_button_reportar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginRight="44dp"
+            android:clickable="true"
+            android:onClick="nextAction"
+            android:src="@drawable/ic_check_white_36dp"
+            android:visibility="visible"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

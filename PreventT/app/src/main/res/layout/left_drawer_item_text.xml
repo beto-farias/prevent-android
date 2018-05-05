@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_crimen_homicidio"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/txt_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_10"
+        android:text="New Text"
+        android:textSize="@dimen/ps_16"
+        android:gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/img_check_delito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_check_off"
+        android:layout_gravity="center_vertical" />
+
+
+</LinearLayout>
+
