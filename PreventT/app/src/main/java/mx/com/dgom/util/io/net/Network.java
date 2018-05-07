@@ -71,11 +71,12 @@ public class Network {
 		long total = System.currentTimeMillis() - init;
 		Log.d(TAG,"Tiempo de carga: " + total + "ms");
 		System.out.println(res);
-		try {
-			res = new String(res.getBytes(encodigFrom), encodingTo);
+
+		/*try {
+			//res = new String(res.getBytes(encodigFrom), encodingTo);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
-		}
+		}*/
 		System.out.println(res);
 		return res;
 	}
@@ -154,7 +155,9 @@ public class Network {
             long finishTime = System.currentTimeMillis() - initTime;
             Log.d(TAG,"Tiempo de respuesta del post " + finishTime + " ms");
 
-			String jsonResponse = EntityUtils.toString(response.getEntity()); 
+			String jsonResponse = EntityUtils.toString(response.getEntity());
+
+			Log.d(TAG,"Respuesta server:" + jsonResponse);
 
 			//Verifica la respuesta
 			if(response.getStatusLine().getStatusCode() != 200){

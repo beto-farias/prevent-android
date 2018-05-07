@@ -30,9 +30,9 @@ public class AppNetwork {
 
     private static final String TAG = "AppNetwork";
 
-    //private static final String END_POINT = "http://192.168.0.13/wwwPrevente/preventServices/";
+    private static final String END_POINT = "http://192.168.0.10/2018/wwwPrevent-delito.com/app-index.php/preventServices/";
     //private static final String END_POINT = "http://notei.com.mx/test/wwwPrevenT/preventServices/";
-    private static final String END_POINT = "http://app.prevent-delito.com/preventServices/";
+    //private static final String END_POINT = "http://app.prevent-delito.com/preventServices/";
     private static final String END_POINT_DELITO_BY_TIPO = "getAllDelitos/";
     private static final String END_POINT_DETALLE_DELITO = "getDetallesDelito/";
     private static final String END_POINT_DELITO_TIMELINE = "getAllDelitosFull/";

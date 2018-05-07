@@ -115,13 +115,18 @@ public class SplashActivity extends Activity {
 
 
 
-                AppVersionTO version = controller.verificaVersion();
-
+                //AppVersionTO version = controller.verificaVersion();
+/*
                 if (version != null) {
                     showUpdateDialog(version);
                 }else{
                     continueApp();
                 }
+
+                */
+
+                continueApp();
+
             }
         }, SPLASH_TIME_OUT);
 

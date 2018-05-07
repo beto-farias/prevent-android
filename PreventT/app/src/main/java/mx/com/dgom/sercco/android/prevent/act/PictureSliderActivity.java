@@ -123,7 +123,7 @@ public class PictureSliderActivity extends Activity {
     public void saveImageAction(View v){
         Log.d(TAG, "rotate Right");
         Toast.makeText(this,R.string.guardando_archivo,Toast.LENGTH_SHORT).show();
-        new SaveFileTask().execute(null);
+        new SaveFileTask().execute("");
 
     }
 
